@@ -29,10 +29,22 @@ public class BorderLayoutExample extends JFrame {
         yellowPanel.setPreferredSize(new Dimension(100, 100));
         yellowPanel.setBackground(Color.YELLOW);
 
+        JButton rotate = new JButton("Rotate");
+        rotate.addActionListener(e -> {
+            Color c = redPanel.getBackground();
+           redPanel.setBackground(greenPanel.getBackground());
+           greenPanel.setBackground(bluePanel.getBackground());
+           bluePanel.setBackground(yellowPanel.getBackground());
+           yellowPanel.setBackground(c);
+        });
+
+
         add(redPanel, BorderLayout.NORTH);
         add(bluePanel, BorderLayout.SOUTH);
         add(greenPanel, BorderLayout.WEST);
         add(yellowPanel, BorderLayout.EAST);
+        add(rotate, BorderLayout.CENTER);
+
     }
 
 
