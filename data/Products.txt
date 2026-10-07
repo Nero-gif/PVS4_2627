@@ -1,0 +1,100 @@
+Keyboard Basic;Electronics;8;499.90
+Keyboard Mechanical;Electronics;14;1799.00
+Wireless Keyboard;Electronics;21;899.90
+Mouse Basic;Electronics;35;249.90
+Gaming Mouse;Electronics;7;1299.00
+Wireless Mouse;Electronics;26;699.90
+Monitor 22;Electronics;5;2999.00
+Monitor 24;Electronics;12;4299.00
+Monitor 27;Electronics;9;6499.00
+Webcam HD;Electronics;18;899.00
+Webcam FullHD;Electronics;6;1499.00
+USB Microphone;Audio;11;1899.00
+Headphones Basic;Audio;28;599.00
+Headphones Wireless;Audio;4;2499.00
+Headset Office;Audio;19;1199.00
+Speakers 2.0;Audio;13;999.00
+Bluetooth Speaker;Audio;8;1599.00
+HDMI Cable 1m;Accessories;46;149.00
+HDMI Cable 2m;Accessories;31;219.00
+DisplayPort Cable;Accessories;17;299.00
+USB-C Cable;Accessories;42;199.00
+USB-A Cable;Accessories;55;129.00
+USB Extension Cable;Accessories;23;179.00
+Ethernet Cable 1m;Networking;38;99.00
+Ethernet Cable 5m;Networking;27;249.00
+Ethernet Cable 10m;Networking;6;399.00
+WiFi Router Basic;Networking;15;1099.00
+WiFi Router AX;Networking;7;2499.00
+Network Switch 5-port;Networking;16;699.00
+Network Switch 8-port;Networking;5;1199.00
+USB WiFi Adapter;Networking;29;499.00
+SSD 500GB;Storage;18;1299.00
+SSD 1TB;Storage;10;2199.00
+SSD 2TB;Storage;3;3999.00
+HDD 1TB;Storage;9;1399.00
+HDD 2TB;Storage;12;1899.00
+External HDD 2TB;Storage;6;2399.00
+USB Flash 32GB;Storage;44;199.00
+USB Flash 64GB;Storage;33;299.00
+USB Flash 128GB;Storage;20;499.00
+Memory Card 64GB;Storage;24;349.00
+Memory Card 128GB;Storage;11;599.00
+Laptop Stand;Accessories;19;749.00
+Notebook Cooling Pad;Accessories;8;899.00
+Mouse Pad Small;Accessories;37;129.00
+Mouse Pad Large;Accessories;22;349.00
+USB Hub 4-port;Accessories;14;499.00
+USB-C Hub;Accessories;7;1299.00
+Card Reader;Accessories;16;399.00
+Laptop Sleeve 14;Accessories;12;599.00
+Laptop Sleeve 15;Accessories;9;649.00
+Office Chair Basic;Furniture;6;2499.00
+Office Chair Comfort;Furniture;4;4499.00
+Gaming Chair;Furniture;3;5999.00
+Office Desk Small;Furniture;8;3299.00
+Office Desk Large;Furniture;5;4999.00
+Desk Lamp;Furniture;17;699.00
+Monitor Stand;Furniture;13;899.00
+Drawer Unit;Furniture;7;2199.00
+Foot Rest;Furniture;10;799.00
+Notebook A5;Office;48;69.90
+Notebook A4;Office;34;99.90
+Ballpoint Pen Blue;Office;80;19.90
+Ballpoint Pen Black;Office;74;19.90
+Marker Set;Office;25;149.00
+Sticky Notes;Office;61;59.90
+Printer Paper A4;Office;40;139.00
+Document Folder;Office;32;49.90
+Stapler;Office;18;189.00
+Hole Punch;Office;9;249.00
+Printer Laser;Electronics;5;3999.00
+Printer Inkjet;Electronics;7;2799.00
+Black Toner;Office;11;1499.00
+Color Toner;Office;6;1899.00
+Ink Cartridge Black;Office;15;699.00
+Ink Cartridge Color;Office;10;799.00
+RAM 8GB DDR4;Components;21;599.00
+RAM 16GB DDR4;Components;13;1099.00
+RAM 16GB DDR5;Components;9;1499.00
+RAM 32GB DDR5;Components;4;2699.00
+CPU Cooler;Components;12;899.00
+Case Fan 120mm;Components;28;249.00
+PC Power Supply 500W;Components;7;1299.00
+PC Power Supply 750W;Components;5;2199.00
+PC Case Mini;Components;8;1499.00
+PC Case Tower;Components;6;2399.00
+Bluetooth Adapter;Electronics;30;299.00
+USB Sound Card;Audio;14;449.00
+Conference Speaker;Audio;3;2999.00
+Phone Charger 20W;Accessories;27;499.00
+Phone Charger 45W;Accessories;16;899.00
+Power Bank 10000mAh;Accessories;12;799.00
+Power Bank 20000mAh;Accessories;7;1299.00
+Surge Protector;Accessories;20;549.00
+Extension Cord 3m;Accessories;18;349.00
+Cable Organizer;Accessories;36;99.00
+Cleaning Spray;Office;24;129.00
+Screen Cleaning Kit;Office;13;249.00
+Compressed Air;Office;8;179.00
+Label Stickers;Office;29;89.90
