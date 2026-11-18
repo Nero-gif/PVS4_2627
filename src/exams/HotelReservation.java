@@ -4,6 +4,7 @@ package exams;
 import javax.naming.Name;
 import javax.swing.*;
 import java.awt.*;
+import java.sql.Time;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class HotelReservation extends JFrame {
