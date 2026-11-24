@@ -2,6 +2,7 @@ package gui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Objects;
 
 public class RpgTimer extends JFrame {
 
@@ -23,6 +24,9 @@ public class RpgTimer extends JFrame {
 
     private Timer playerTimer;
     private Timer monsterTimer;
+    private Timer poisonTimer;
+    
+    private int poisonCountdown = 5;
 
     public RpgTimer() {
         setTitle("Mini RPG Duel");
@@ -43,7 +47,7 @@ public class RpgTimer extends JFrame {
 
         JLabel nameLabel = new JLabel("Knight", JLabel.CENTER);
         playerCooldownLabel = new JLabel("Cooldown: 0 s", JLabel.CENTER);
-        JLabel imageLabel = new JLabel(new ImageIcon("knight.png"));
+        JLabel imageLabel = new JLabel(new ImageIcon("data/Arasaka.png"));
         playerHPLabel = new JLabel("HP: 100 / 100", JLabel.CENTER);
 
         // Attack buttons panel
@@ -53,9 +57,9 @@ public class RpgTimer extends JFrame {
         heavyAttackButton = new JButton("Heavy attack");
         specialAttackButton = new JButton("Special attack");
 
-        quickAttackButton.addActionListener(e -> attack(10, 1));
-        heavyAttackButton.addActionListener(e -> attack(25, 3));
-        specialAttackButton.addActionListener(e -> attack(45, 5));
+        quickAttackButton.addActionListener(e -> attack(5, 2, "Quick"));
+        heavyAttackButton.addActionListener(e -> attack(10, 3, "heavy"));
+        specialAttackButton.addActionListener(e -> attack(20, 5, "Special"));
 
         attackPanel.add(quickAttackButton);
         attackPanel.add(heavyAttackButton);
@@ -77,7 +81,7 @@ public class RpgTimer extends JFrame {
         JLabel nameLabel = new JLabel("Monster", JLabel.CENTER);
         monsterCooldownLabel = new JLabel("Cooldown: 3 s", JLabel.CENTER);
 
-        JLabel imageLabel = new JLabel(new ImageIcon("monster.png"));
+        JLabel imageLabel = new JLabel(new ImageIcon("data/Militech.png"));
         monsterHPLabel = new JLabel("HP: 100 / 100", JLabel.CENTER);
 
         panel.add(nameLabel);
@@ -104,11 +108,25 @@ public class RpgTimer extends JFrame {
                 setAttackButtonsEnabled(true);
             }
         });
+        poisonTimer = new Timer(1000, a ->{
+            poisonCountdown--;
+            playerHP = Math.max(0, playerHP - 5);
+            playerHPLabel.setText("HP: " + playerHP + " / 100");
+            if (poisonCountdown <= 0){
+                poisonCountdown = 5;
+                poisonTimer.stop();
+            }
+        });
         monsterTimer = new Timer(1000, e -> {
             monsterCooldown--;
 
-            if (monsterCooldown <= 0) {
-                playerHP = Math.max(0, playerHP - 15);
+            int poisonChance= (int)(Math.random() * 3); // 0 to 2
+            
+            if (poisonChance == 2){
+                poisonTimer.start();
+            }
+            else if (monsterCooldown <= 0) {
+                playerHP = Math.max(0, playerHP - 10);
                 monsterCooldown = 3;
 
                 playerHPLabel.setText("HP: " + playerHP + " / 100");
@@ -120,9 +138,15 @@ public class RpgTimer extends JFrame {
         });
     }
 
-    private void attack(int damage, int cooldown) {
+    private void attack(int damage, int cooldown, String type) {
         if (!monsterTimer.isRunning()) {
             monsterTimer.start();
+        }
+
+        int criticalChance = (int)(Math.random() * 101); // 0 to 100
+        
+        if (Objects.equals(type, "Special") && criticalChance < 40) {
+            damage *= 2;
         }
 
         monsterHP = Math.max(0, monsterHP - damage);

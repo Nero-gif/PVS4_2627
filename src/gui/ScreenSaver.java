@@ -30,7 +30,7 @@ class Canvas extends JPanel{
         setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT));
         setBackground(Color.black);
 
-        bouncing = new ImageIcon("data/bouncing.png").getImage();
+        bouncing = new ImageIcon("data/Militech.png").getImage();
         bouncing = bouncing.getScaledInstance(bouncing.getWidth(null)/3, bouncing.getHeight(null)/3, Image.SCALE_SMOOTH);
         Timer t = new Timer(10, e -> doBouncing());
         t.start();
