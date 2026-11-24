@@ -30,7 +30,8 @@ class Canvas extends JPanel{
         setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT));
         setBackground(Color.black);
 
-        bouncing = new ImageIcon("dvd.png").getImage();
+        bouncing = new ImageIcon("data/bouncing.png").getImage();
+        bouncing = bouncing.getScaledInstance(bouncing.getWidth(null)/3, bouncing.getHeight(null)/3, Image.SCALE_SMOOTH);
         Timer t = new Timer(10, e -> doBouncing());
         t.start();
     }
@@ -39,6 +40,7 @@ class Canvas extends JPanel{
     public void paint(Graphics g) {
         super.paint(g);
         Graphics2D g2d = (Graphics2D) g;
+        
 
 //        g2d.drawLine(0,0, 500,60);
         g2d.drawImage(bouncing, x,y, null);
